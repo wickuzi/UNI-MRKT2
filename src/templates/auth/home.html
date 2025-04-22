@@ -1,0 +1,23 @@
+{% extends './base.html' %}
+
+{% block title %}UNI-MRKT{% endblock %}
+
+{% block customCSS %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/home.css')}}">
+{% endblock %}
+
+{% block body %}
+<div class="hero">
+    <div class="logo">
+        <h1 class="logotexto">-Markt</h1>
+      <img src="static/img/UNI-Nicaragua.jpg" class="logoUNI" />
+    </div>
+
+    <div class="content">
+      <h1>¡Compra, vende o intercambia con tu comunidad universitaria!</h1>
+      <p>¿Libros, apuntes, gadgets o hasta una bici? Encuentra lo que necesitas o dale una segunda vida a lo que ya no usas.</p>
+      <p>¡Hazlo fácil, rápido y seguro dentro de UNI Market!</p>
+      <a href="#" class="btn">¡Entra ya!</a>
+    </div>
+  </div>
+{% endblock %}

@@ -1,0 +1,84 @@
+html,
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  body, html {
+    height: 100%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-
+    serif;
+
+  }
+
+  .hero {
+    position: relative;
+    background-image: url('../img/image.png'); /* Reemplaza con tu imagen de fondo */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+  }
+
+
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+  h1.logotexto{
+    font-size: 70px;
+    padding-left: 116px;
+    padding-top: 15px;
+}
+
+  .logo img {
+    position: absolute;
+    height: 67px;
+    padding-left: 1px;
+  }
+
+  .content {
+    width: 700px; 
+    border: 2px solid #b7b6b6; 
+    padding-bottom: 20px;
+    border-radius: 10px; 
+    background-color: #00000065; 
+    box-shadow: 4px 4px 10px rgba(14, 21, 157, 0.481); 
+    text-align: center; 
+    margin: 20px auto; 
+  }
+
+  h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+  }
+
+  p {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+  }
+
+  .btn {
+    display: inline-block;
+    background-color: #1a3890;
+    color: white;
+    padding: 12px 24px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    text-decoration: none;
+    transition: background 0.3s;
+ 
+  }
+
+  .btn:hover {
+    color: black;
+    background-color: #ffffff;
+  }

@@ -1,0 +1,71 @@
+html,
+*{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-
+    serif;
+}
+.Logo{
+    position: relative;
+    height: 120px;
+    padding-left: 490px;
+    padding-top: 50px;
+}
+h1.logotexto{
+    font-size: 63px;
+    position: absolute;
+    padding-left: 617px;
+    padding-top: 22px;
+    padding-top: 45px;
+}
+
+div.lr{
+    width: 450px; 
+    border: 2px solid #b7b6b6; 
+    padding-bottom: 20px;
+    border-radius: 10px; 
+    background-color: #ffffff; 
+    box-shadow: 4px 4px 10px rgba(14, 21, 157, 0.481); 
+    text-align: center; 
+    margin: 20px auto; 
+}
+
+h2{
+    padding-bottom: 5px;
+}
+
+p.plogin{
+    padding-left: 20px;
+    text-align:start;
+}
+
+.tlogin{
+    width: 400px;
+    background-color: rgba(250, 235, 215, 0.396);
+    border-color: #ffffff;
+}
+
+.login,.register{
+    align-content: center;
+    font-size: 14px;
+    background-color: #1a3890;
+    color: #ffffff;
+    margin-top: 29px;
+    transition: background-color 0.3s ease;
+}
+
+.register:hover{
+    color: black;
+    background-color: #ffffff;
+  }
+
+.login:hover{
+    color: black;
+    background-color: #ffffff;
+}
+.flash{
+    width: auto;
+    text-align: center;
+    color: rgb(215, 26, 26);
+    background-color: rgba(250, 235, 215, 0);
+    padding-top: 20px;
+}
+  

@@ -1,0 +1,45 @@
+{% extends './base.html' %}
+
+{% block title %}UNI-MRKT{% endblock %}
+
+{% block customCSS %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/register.css')}}">
+{% endblock %}
+
+{% block body %}
+<form class="form-register" action="/register" method="POST">
+<h1 class="logotexto">-Markt</h1>
+   <img src="static/img/UNI-Nicaragua.jpg" alt="Logo" class="Logo"> 
+   <!-- Muestra los mensajes flash -->
+{% with messages = get_flashed_messages() %}
+{% if messages %}
+  <div class="flash" role="alert">
+    {% for message in messages %}
+      <p>{{ message }}</p>
+    {% endfor %}
+  </div>
+{% endif %}
+{% endwith %}
+
+    <div class="lr">
+
+        <h2>¡Crea tu cuenta!</h2>
+        <p class="plogin">Nombre de usuario</p>
+        <input type="text" class="tlogin" id="username" name="username">
+
+        <p class="plogin">Correo Electronico UNI</p>
+        <input type="text" class="tlogin" id="correo" name="correo">
+
+        <p class="plogin">Contraseña</p>
+        <input type="text" class="tlogin" id="password" name="password">
+
+        <button type="submit" class="register">Registrarse</button>
+
+        {% set login_url = url_for('login') %}
+
+        <button type="button" class="login" onclick="location.href='{{ login_url }}'">Iniciar sesión</button>
+    </div>
+    </form>
+    
+  
+{% endblock %}
