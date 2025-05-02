@@ -3,9 +3,6 @@ from config import config
 from flask_mysqldb import MySQL
 from flask_session import Session
 from werkzeug.security import check_password_hash, generate_password_hash
-
-
-
 from Models.Entities.ModelUser import ModelUser
 from Models.Entities.ModelUser import User
 
@@ -72,6 +69,10 @@ def login():
 @app.route('/home')
 def home():
     return render_template('auth/home.html')
+
+@app.route('/principal')
+def principal():
+    return render_template('auth/main.html')
 
 
 if __name__ =='__main__':

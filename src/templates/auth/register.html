@@ -8,9 +8,12 @@
 
 {% block body %}
 <form class="form-register" action="/register" method="POST">
-<h1 class="logotexto">-Markt</h1>
-   <img src="static/img/UNI-Nicaragua.jpg" alt="Logo" class="Logo"> 
-   <!-- Muestra los mensajes flash -->
+<div class="logo-contenedor">
+  <img src="static/img/UNI-Nicaragua.jpg" alt="Logo" class="Logo"> 
+  <h1 class="logotexto">-Markt</h1>
+</div>
+
+
 {% with messages = get_flashed_messages() %}
 {% if messages %}
   <div class="flash" role="alert">
@@ -31,7 +34,7 @@
         <input type="text" class="tlogin" id="correo" name="correo">
 
         <p class="plogin">Contraseña</p>
-        <input type="text" class="tlogin" id="password" name="password">
+        <input type="password" class="tlogin" id="password" name="password">
 
         <button type="submit" class="register">Registrarse</button>
 

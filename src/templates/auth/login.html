@@ -8,29 +8,31 @@
 
 {% block body %}
 <form method="POST" action="{{ url_for('login') }}">
-<h1 class="logotexto">-Markt</h1>
-   <img src="static/img/UNI-Nicaragua.jpg" alt="Logo" class="Logo"> 
-   
-   {% with messages = get_flashed_messages() %}
-  {% if messages %}
-    <div class="flash">
-      {% for message in messages %}
-        <p>{{ message }}</p>
-      {% endfor %}
-    </div>
-  {% endif %}
-{% endwith %}
-  
-    <div class="lr">
+  <div class="logo-contenedor">
+    <img src="static/img/UNI-Nicaragua.jpg" alt="Logo" class="Logo">
+    <h1 class="logotexto">-Markt</h1>
+  </div>
 
-        <h2>¡Inicia Sesión!</h2>
-        <p class="plogin">Correo Electronico UNI</p>
-        <input type="text" class="tlogin" id="correo" name="correo">
+  {% with messages = get_flashed_messages() %}
+    {% if messages %}
+      <div class="flash">
+        {% for message in messages %}
+          <p>{{ message }}</p>
+        {% endfor %}
+      </div>
+    {% endif %}
+  {% endwith %}
 
-        <p class="plogin">Contraseña</p>
-        <input type="text" class="tlogin" id="password" name="password">
+  <div class="lr">
+    <h2>¡Inicia Sesión!</h2>
 
-        <button type="submit" class="login">Inicar Sesión</button>
-    </div>
+    <p class="plogin">Correo Electrónico UNI</p>
+    <input type="text" class="tlogin" id="correo" name="correo">
+
+    <p class="plogin">Contraseña</p>
+    <input type="password" class="tlogin" id="password" name="password">
+
+    <button type="submit" class="login">Iniciar Sesión</button>
+  </div>
 </form>
 {% endblock %}

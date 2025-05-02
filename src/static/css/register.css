@@ -2,22 +2,37 @@ html,
 *{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-
     serif;
+    box-sizing: border-box;
 }
-.Logo{
-    position: relative;
-    height: 120px;
-    padding-left: 490px;
-    padding-top: 50px;
-}
-h1.logotexto{
-    font-size: 63px;
-    position: absolute;
-    padding-left: 617px;
-    padding-top: 22px;
-    padding-top: 45px;
-}
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+.logo-contenedor {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+  }
+  
+  .Logo {
+    max-width: 100px;
+    height: auto;
+  }
+  
+  h1.logotexto {
+    font-size: 54px;
+    margin: 0;
+  }  
 
-div.lr{
+.lr{
     width: 450px; 
     border: 2px solid #b7b6b6; 
     padding-bottom: 20px;
@@ -29,27 +44,38 @@ div.lr{
 }
 
 h2{
+    padding-top: 10px;
     padding-bottom: 5px;
 }
 
 p.plogin{
+    margin-bottom: 5px;
     padding-left: 20px;
     text-align:start;
 }
 
 .tlogin{
-    width: 400px;
+    width: 90%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
     background-color: rgba(250, 235, 215, 0.396);
-    border-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
 
 .login,.register{
-    align-content: center;
+    width: 30%;
+    padding: 10px;
     font-size: 14px;
     background-color: #1a3890;
     color: #ffffff;
-    margin-top: 29px;
-    transition: background-color 0.3s ease;
+    margin-top: 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease-in;
+
 }
 
 .register:hover{

@@ -9,15 +9,17 @@
 {% block body %}
 <div class="hero">
     <div class="logo">
-        <h1 class="logotexto">-Markt</h1>
       <img src="static/img/UNI-Nicaragua.jpg" class="logoUNI" />
+      <h1 class="logotexto">-Markt</h1>
     </div>
 
     <div class="content">
       <h1>¡Compra, vende o intercambia con tu comunidad universitaria!</h1>
       <p>¿Libros, apuntes, gadgets o hasta una bici? Encuentra lo que necesitas o dale una segunda vida a lo que ya no usas.</p>
       <p>¡Hazlo fácil, rápido y seguro dentro de UNI Market!</p>
-      <a href="#" class="btn">¡Entra ya!</a>
+      
+      {% set principal_url = url_for('principal') %}
+      <button type="button" class="btn" onclick="location.href='{{ principal_url }}'">¡Entra ya!</button>
     </div>
   </div>
 {% endblock %}
