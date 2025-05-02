@@ -25,6 +25,7 @@
 
   <div class="lr">
     <h2>¡Inicia Sesión!</h2>
+    <input type="hidden" name="csrf_token" value ="{{ csrf_token() }}">
 
     <p class="plogin">Correo Electrónico UNI</p>
     <input type="text" class="tlogin" id="correo" name="correo">

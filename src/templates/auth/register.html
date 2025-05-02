@@ -27,6 +27,7 @@
     <div class="lr">
 
         <h2>¡Crea tu cuenta!</h2>
+        <input type="hidden" name="csrf_token" value ="{{ csrf_token() }}">
         <p class="plogin">Nombre de usuario</p>
         <input type="text" class="tlogin" id="username" name="username">
 

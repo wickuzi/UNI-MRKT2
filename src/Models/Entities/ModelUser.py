@@ -37,3 +37,18 @@ class ModelUser:
             return None
         except Exception as ex:
             raise Exception(f"Error al hacer login: {ex}")
+        
+    @classmethod
+    def get_by_id(self, db, id):
+        try:
+            cursor = db.connection.cursor()
+            sql = "SELECT id, username, correo FROM user WHERE id = {}".format(id)
+            cursor.execute(sql)
+            row = cursor.fetchone()
+
+            if row is not None:
+                    return User(row[0], row[1], row[2], None)
+            else:
+                  return None
+        except Exception as ex:
+            raise Exception(f"Error al hacer login: {ex}")
